@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Portofolio iannfavyouu</title>
+    <link rel="stylesheet" href="style.css">
+    <!----Font awesome cdn  font icon css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <style>
+        /* Mencegah scroll horizontal */
+        body {
+            overflow-x: hidden;
+        }
+    </style>
+</head>
+<body>
+     <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-i"></i>
+                    <div class="logo-text">iannfavyouu</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="waifu.html">Anime</a></li>
+                        <li><a href="https://wa.me/6282282496798">Chat ME</a></li>
+                        <li><a href="comunity.html">Comunnity</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="https://wa.me/6285696809249">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                 <div class="hero-pic">
+                    <img src="35b419e3-d804-4e86-b6bd-a30d6f317438.jpeg" alt="profile pic">
+                 </div>
+                 <div class="hero-text">
+                    <h5>Hi I'm <span class="input">Like reptil</span></h5>
+                    <h1>iannfavyouu</h1>
+                    <p> Saya seorang remaja berusia 18 tahun yang menyukai tentang alam terkhusus nya dunia hewan karena saya salah satu pecinta hewan, selain itu saya juga sedang mempelajari tentang dunia coding dan sedang belajar mengenai html dan css. mohon bantuannya
+                    </p>
+                    
+                    <div class="btn-group">
+                       <a href="https://instagram.com/iannfavyouu" class="btn active">Follow Me</a>
+                       <a href="https://wa.me/6285696809249" class="btn active">Contact</a>
+                    </div>
+
+                    <div class="social">
+                        <a href="https://www.facebook.com/share/15ms9A6F4o/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.youtube.com/@iannfavyou."><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://instagram.com/iannfavyouu"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="tiktok.com/@giannluckyy"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="#"><i class="fa-brands fa-pintrest"></i></a>
+                    </div>
+                 </div>
+            </div>
+        </div>
+     </div>
+     <!---typed js for typing text effect-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+     <script>
+        /** creating button click show hide navbar **/
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+
+        var typed=new Typed(".input",{
+            strings:["Like reptil","Like demon slayer","Web Developer"],
+            typedSpeed:90,
+            backSpeed:100,
+            loop:true
+        })
+     </script>
+</body>
+</html>

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:title" content="iannfavyouu Community" />
+  <meta property="og:image" content="https://f.top4top.io/p_3212lghvw1.jpg" />
+  <meta property="og:description" content="WhatsApp Bot Community, Sharing Code & Scraper, Discussing about WhatsApp Ai" />
+  <meta name="twitter:image:src" content="https://f.top4top.io/p_3212lghvw1.jpg" />
+  <title>Community</title>
+  <link
+    href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #fff;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      overflow-x: hidden;
+      color: #333;
+    }
+    * {
+      font-weight: bold;
+    }
+    .container {
+      padding: 20px;
+      max-width: 600px;
+      margin: auto;
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+      position: relative;
+      z-index: 1;
+    }  
+    .profile-pic {
+      width: 320px;
+      height: 320px;
+      margin: 20px auto 10px;
+      animation: bounce 5.5s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+      }
+      40% {
+      transform: translateY(-10px);
+      }
+      60% {
+      transform: translateY(-5px);
+     }
+   }
+
+    .title {
+      font-size: 26px;
+      font-weight: bold;
+      margin: 10px 0;
+      color: #5d5d5d;
+    }
+    .subtitle {
+      font-size: 16px;
+      color: #55555594;
+      margin-bottom: 20px;
+    }
+    .social-icons {
+      margin: 20px 0;
+    }
+    .social-icons a {
+      margin: 0 10px;
+      color: #5d5d5d;
+      font-size: 28px;
+      transition: color 0.3s;
+    }
+    .section {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 20px 0;
+      text-align: left;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    .section-title {
+      font-size: 15px;
+      color: #3d3d3d97;
+      margin-bottom: 9px;
+    }
+    .link-item {
+      display: flex;
+      align-items: center;
+      padding: 12px 0;
+      border-bottom: 1px solid #eee;
+      cursor: pointer;
+      text-decoration: none;
+      color: #333;
+    }
+    .link-item i {
+      font-size: 26px;
+      margin-right: 10px;
+      color: #000;
+    }
+    .link-item span {
+      font-size: 18px;
+    }
+
+    .sidebar {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 2;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .sidebar a {
+            padding: 10px 15px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidebar a:hover {
+            color: #f1f1f1;
+        }
+
+        .sidebar .closebtn {
+            position: absolute;
+            top: 10px;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+    .openbtn {
+            font-size: 20px;
+            cursor: pointer;
+            background-color: #111;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+        }
+
+    .openbtn:hover {
+            background-color: #444;
+        }
+
+        #main {
+            transition: margin-left .5s;
+            padding: 16px;
+        }
+
+  </style>
+</head>
+<body>
+  <div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="index.html">Home</a>
+    <a href="https://wa.me/6282282496798">Chat Ai</a>
+    <a href="waifu.html">Anime</a>
+    <a href="#">Blog</a>
+    <a href="https://wa.me/6285696809249">Contact</a>
+</div>
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰ About iann</button>
+</div>
+
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+
+  <script>
+
+function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+        }
+
+    function renderPage() {
+      const root = document.getElementById('root');
+
+      const container = document.createElement('div');
+      container.className = 'container';
+
+      const profilePic = document.createElement('img');
+      profilePic.className = 'profile-pic';
+      profilePic.src = 'Papel.jpeg';
+      profilePic.alt = 'profile picture';
+      container.appendChild(profilePic);
+
+      const title = document.createElement('div');
+      title.className = 'title';
+      title.innerHTML = 'Matcha Bobaa - MLBB <i class="fas fa-check-circle"></i>';
+      container.appendChild(title);
+
+      const subtitle = document.createElement('div');
+      subtitle.className = 'subtitle';
+      subtitle.textContent = "ikan hiu melayang layang, rasakan suara merdu dari penderitaan";
+      container.appendChild(subtitle);
+
+      function addSection(titleText, links) {
+        const section = document.createElement('div');
+        section.className = 'section';
+
+        const sectionTitle = document.createElement('div');
+        sectionTitle.className = 'section-title';
+        sectionTitle.textContent = titleText;
+        section.appendChild(sectionTitle);
+
+        links.forEach(({ href, icon, text }) => {
+          const linkItem = document.createElement('a');
+          linkItem.className = 'link-item';
+          linkItem.href = href;
+          linkItem.target = '_blank';
+          linkItem.rel = 'noopener noreferrer';
+          linkItem.innerHTML = `<i class="${icon}"></i><span>${text}</span>`;
+          section.appendChild(linkItem);
+        });
+
+        container.appendChild(section);
+      }
+
+      addSection('Para Admin - WhatsApp Bot', [
+        { href: 'https://chat.whatsapp.com/LQd3oQRuOZk48eXeX3hF0j', icon: 'fab fa-whatsapp', text: 'Mobile Legen' },
+        { href: 'https://wa.me/6281367106141', icon: 'fab fa-whatsapp', text: 'Aji Alexa Iddha' },
+        { href: 'https://wa.me/6285696809249', icon: 'fab fa-whatsapp', text: 'Gian Lucky Satria' },
+        { href: 'https://wa.me/6281779233579', icon: 'fab fa-whatsapp', text: 'Vicki Adrian' },
+        { href: 'https://wa.me/6285896949486', icon: 'fab fa-whatsapp', text: 'Tirta Arya Pratama' },
+        { href: 'https://wa.me/62895805222122', icon: 'fab fa-whatsapp', text: 'M Fairuz Ramadhan' },
+        { href: 'https://wa.me/6283161439644', icon: 'fab fa-whatsapp', text: 'Ginanjar Wisnu' }
+      ]);
+        
+
+      root.appendChild(container);
+    }
+
+    renderPage();
+  </script>
+</body>
+  </html>
